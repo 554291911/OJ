@@ -2,7 +2,7 @@ package one.LastKNode;
 
 public class RemoveLastKthNode {
 	
-	public Node SingleRemove(Node head, int K) {
+	public Node singleRemove(Node head, int K) {
 		if (head == null || K < 1)
 			return head;
 		Node cur = head;
@@ -21,7 +21,7 @@ public class RemoveLastKthNode {
 		return head;
 	}
 	
-	public DoubleNode DoubleRemove(DoubleNode head, int K) {
+	public DoubleNode doubleRemove(DoubleNode head, int K) {
 		if (head == null || K < 1)
 			return head;
 		DoubleNode cur = head;
