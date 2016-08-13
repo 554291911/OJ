@@ -1,5 +1,7 @@
 package one.MidNode;
 
+import commonDataStructure.Node;
+
 public class RemoveMidNode {
 	
 	public Node removeMidNode(Node head) {
@@ -36,15 +38,5 @@ public class RemoveMidNode {
 			cur.next = cur.next.next;
 		}
 		return head;
-	}
-}
-
-class Node {
-	
-	public int value;
-	public Node next;
-	
-	public Node(int data) {
-		this.value = data;
 	}
 }

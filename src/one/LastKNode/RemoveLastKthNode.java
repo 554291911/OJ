@@ -1,5 +1,8 @@
 package one.LastKNode;
 
+import commonDataStructure.DoubleNode;
+import commonDataStructure.Node;
+
 public class RemoveLastKthNode {
 	
 	public Node singleRemove(Node head, int K) {
@@ -42,26 +45,5 @@ public class RemoveLastKthNode {
 				cur.next.next.pre = cur;
 		}
 		return head;
-	}
-}
-
-class Node {
-	
-	public int value;
-	public Node next;
-	
-	public Node(int data) {
-		this.value = data;
-	}
-}
-
-class DoubleNode {
-	
-	public int value;
-	public DoubleNode pre;
-	public DoubleNode next;
-	
-	public DoubleNode(int data) {
-		this.value = data;
 	}
 }

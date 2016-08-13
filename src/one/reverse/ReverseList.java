@@ -1,5 +1,8 @@
 package one.reverse;
 
+import commonDataStructure.DoubleNode;
+import commonDataStructure.Node;
+
 public class ReverseList {
 	
 	public Node singleReverse(Node head) {
@@ -28,23 +31,3 @@ public class ReverseList {
 	}
 }
 
-class Node {
-	
-	public int value;
-	public Node next;
-	
-	public Node(int data) {
-		this.value = data;
-	}
-}
-
-class DoubleNode {
-	
-	public int value;
-	public DoubleNode pre;
-	public DoubleNode next;
-	
-	public DoubleNode(int data) {
-		this.value = data;
-	}
-}

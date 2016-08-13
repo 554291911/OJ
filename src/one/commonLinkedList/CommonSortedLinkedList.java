@@ -1,5 +1,7 @@
 package one.commonLinkedList;
 
+import commonDataStructure.Node;
+
 public class CommonSortedLinkedList {
 
 	public void printCommonList(Node head1, Node head2) {
@@ -15,15 +17,5 @@ public class CommonSortedLinkedList {
 					head2 = head2.next;
 				}
 		}
-	}
-}
-
-class Node {
-	
-	public int value;
-	public Node next;
-	
-	public Node(int data) {
-		this.value = data;
 	}
 }

@@ -1,5 +1,7 @@
 package one.reversePart;
 
+import commonDataStructure.Node;
+
 public class ReversePart {
 	
 	public Node reversePart(Node head, int from, int to) {
@@ -33,15 +35,5 @@ public class ReversePart {
 			return head;
 		}
 		return node1;
-	}
-}
-
-class Node {
-	
-	public int value;
-	public Node next;
-	
-	public Node(int data) {
-		this.value = data;
 	}
 }

@@ -2,6 +2,8 @@ package one.palindromeList;
 
 import java.util.Stack;
 
+import commonDataStructure.Node;
+
 public class PalindromeList {
 	
 	public boolean palindrome1(Node head) {
@@ -41,12 +43,3 @@ public class PalindromeList {
 
 }
 
-class Node {
-	
-	public int value;
-	public Node next;
-	
-	public Node(int data) {
-		this.value = data;
-	}
-}
