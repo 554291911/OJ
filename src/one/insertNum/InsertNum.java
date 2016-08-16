@@ -1,4 +1,4 @@
-package insertNum;
+package one.insertNum;
 
 import commonDataStructure.Node;
 
