@@ -50,8 +50,8 @@ public class TraverseBTree {
 			Stack<Node> s = new Stack<Node>();
 			while (!s.isEmpty() || head != null) {
 				if (head != null) {
-					head = head.left;// 不停的令head = head.left
 					s.push(head);// 压入left
+					head = head.left;// 不停的令head = head.left
 				} else {// 没有左孩子了
 					head = s.pop();// 弹出栈顶
 					System.out.print(head.value + "	");
