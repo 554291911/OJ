@@ -14,9 +14,10 @@ public class PrintByLevel {
 		int level = 1;
 		LinkedList<Node> queue = new LinkedList<Node>();
 		queue.offer(head);
-		System.out.print("Level " + level + " : ");
+		System.out.print("Level " + level++ + " : ");
 		while (!queue.isEmpty()) {
 			head = queue.pop();
+			System.out.print(head.value + " ");
 			if (head.left != null) {
 				queue.offer(head.left);
 				nextLast = head.left;

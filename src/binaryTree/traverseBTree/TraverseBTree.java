@@ -9,7 +9,7 @@ public class TraverseBTree {
 	public void preOrder1(Node head) {
 		if (head == null)
 			return;
-		System.out.print(head.value + "	");
+		System.out.print(head.value + " ");
 		preOrder1(head.left);
 		preOrder1(head.right);
 	}
@@ -18,7 +18,7 @@ public class TraverseBTree {
 		if (head == null)
 			return;
 		inOrder1(head.left);
-		System.out.print(head.value + "	");
+		System.out.print(head.value + " ");
 		inOrder1(head.right);
 	}
 	
@@ -27,7 +27,7 @@ public class TraverseBTree {
 			return;
 		posOrder1(head.left);
 		posOrder1(head.right);
-		System.out.print(head.value + "	");
+		System.out.print(head.value + " ");
 	}
 	
 	public void preOrder2(Node head) {
@@ -36,13 +36,14 @@ public class TraverseBTree {
 			s.push(head);// 头节点压入栈
 			while (!s.isEmpty()) {// 直到栈为空为止
 				head = s.pop(); // 弹出栈顶节点
-				System.out.print(head.value + "	");// 并打印
+				System.out.print(head.value + " ");// 并打印
 				if (head.right != null)// 压入右孩子
 					s.push(head.right);
 				if (head.left != null)// 压入左孩子
 					s.push(head.left);
 			}
 		}
+		System.out.println();
 	}
 	
 	public void inOrder2(Node head) {
@@ -54,11 +55,12 @@ public class TraverseBTree {
 					head = head.left;// 不停的令head = head.left
 				} else {// 没有左孩子了
 					head = s.pop();// 弹出栈顶
-					System.out.print(head.value + "	");
+					System.out.print(head.value + " ");
 					head = head.right;
 				}
 			}
 		}
+		System.out.println();
 	}
 	
 	public void posOrder2(Node head) {
@@ -76,7 +78,8 @@ public class TraverseBTree {
 					s1.push(head.right);
 			}
 			while (!s2.isEmpty())
-				System.out.print(s2.pop().value + "	");
+				System.out.print(s2.pop().value + " ");
 		}
+		System.out.println();
 	}
 }
